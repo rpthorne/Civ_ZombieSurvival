@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>ZombieSurvivalMode</Name>
+    <Guid>dcff63cd-9ece-49fd-b43a-e545acabf5fd</Guid>
+    <ProjectGuid>84cafe2b-053c-41b8-92f4-20a42bab086a</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Zombie Game Mode</Teaser>
+    <Description>Zombie Game Mode</Description>
+    <Authors>bhahasword</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssemblyName>zombiesGameMode</AssemblyName>
+    <RootNamespace>zombiesGameMode</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="BarbarianModifiers.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PlayerModifiers.sql">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
